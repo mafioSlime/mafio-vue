@@ -2,22 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Events</title>
-  <script src="vue.js"></script>
-  <link rel="stylesheet" href="event.css">
+  <script src="/vue.js"></script>
+  <link rel="stylesheet" href="event.css" />
 </head>
 
 <body>
   <div id="vue-app">
     <h1>Events</h1>
-    <button @click="addYear(1)">Add a Year</button>
+    <button @click.once="addYear(1)">Add a Year</button>
     <button @click="subtractYear(1)">Subtract a Year</button>
     <button @dblclick="addYear(10)">add 10 Years</button>
     <button @dblclick="subtractYear(10)">Subtract 10 Years</button>
     <p>My age is {{ age }}</p>
     <h3>Move your mouse inside the box</h3>
+    <a @click.prevent="click" href="http://www.thenetninja.co.uk">The Net Ninja</a>
     <div id="canvas" @mousemove="updateXY">{{ x }}, {{ y }}</div>
   </div>
 

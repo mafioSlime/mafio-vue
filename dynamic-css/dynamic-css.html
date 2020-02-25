@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic CSS</title>
+  <script src="/vue.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="vue-app">
+    <h1>Dynamic CSS</h1>
+    <h2>Example 1</h2>
+    <!-- <div @click="available = !available" v-bind:class="{available:available}"> -->
+    <!-- <span>Ryu</span> -->
+    <h2>Example 2</h2>
+    <button @click="nearby = !nearby">Toggle Nearby</button>
+    <button @click="available = !available">Toggle Available</button>
+
+    <div v-bind:class="compClasses">
+      <span>Chun-Li</span>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

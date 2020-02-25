@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Events</title>
+  <script src="/vue.js"></script>
+</head>
+
+<body>
+  <div id="vue-app">
+    <h1>Keyboard Events</h1>
+    <label>Name:</label>
+    <span>{{ name }}</span>
+    <input type="text" @keyup="logName">
+    <label>Age:</label>
+    <span> {{ age }}</span>
+    <input type="text" v-model="age">
+  </div>
+
+  <script src="key-events.js"></script>
+</body>
+
+</html>
