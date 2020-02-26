@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if statements</title>
+  <script src="/vue.js"></script>
+</head>
+
+<body>
+  <div id="vue-app">
+    <h1>Vue Statements</h1>
+    <button @click="error = !error">Toggle Error</button>
+    <button @click="success = !success">Toggle Success</button>
+    <p v-if="error">Now you see me</p>
+    <p v-else-if="success">Now you dont!</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
